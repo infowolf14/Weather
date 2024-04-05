@@ -39,7 +39,7 @@ class RequestHandler(BaseHTTPRequestHandler):
                     messages=[
                         {
                             "role": "system",
-                            "content": "You will be provided with a date. You are to predict the weather in Lagos, Nigeria for that date. Don't talk too much, just be straight to the point and say the predicted weather"
+                            "content": "You will be provided with a date. You are to predict the weather in Lagos, Nigeria for that date. You should tell the maximum and minimum temperatures for that day and if it will rain or not. Don't talk too much, just be straight to the point and say the predicted weather"
                         },
                         {
                             "role": "user",
