@@ -2,6 +2,12 @@ import tkinter as tk
 from tkinter import messagebox
 from openai import OpenAI
 
+import os
+
+openai_api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=openai_api_key)
+
+
 # Initialize OpenAI client
 client = OpenAI()
 
